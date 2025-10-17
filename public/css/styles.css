@@ -1,3 +1,61 @@
+/* Custom overrides */
+#layoutSidenav .sb-sidenav {
+  background: #1e1f22; /* deep slate */
+}
+
+.navbar.bg-dark {
+  background-color: #1b1c1f !important;
+}
+
+.btn-primary {
+  background-color: #f4b400;
+  border-color: #f4b400;
+  color: #1b1c1f;
+}
+.btn-primary:hover {
+  background-color: #d99a00;
+  border-color: #d99a00;
+  color: #111;
+}
+
+.badge.bg-success { background-color: #2e7d32 !important; }
+.badge.bg-warning { background-color: #ffc107 !important; }
+.badge.bg-secondary { background-color: #6c757d !important; }
+
+.sb-sidenav .nav-link:hover {
+  background-color: rgba(244,180,0,0.15);
+}
+
+#layoutSidenav_content main {
+  padding-top: 4.5rem; /* clear the fixed top navbar */
+  padding-bottom: 2rem;
+}
+
+#layoutSidenav_content .container-fluid {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ensure content never sits under the sidebar when collapsed/expanded */
+@media (min-width: 992px) {
+  #layoutSidenav_content {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+/* Tidy up cards and headings spacing */
+.card-header i { margin-right: .25rem; }
+h1.mt-4 { margin-bottom: 1rem; }
+
+.quick-action .card-body {
+  transition: background-color .15s ease, transform .15s ease;
+}
+.quick-action:hover .card-body {
+  background-color: rgba(244,180,0,.15);
+  transform: translateY(-1px);
+}
 @charset "UTF-8";
 /*!
 * Start Bootstrap - SB Admin v7.0.7 (https://startbootstrap.com/template/sb-admin)
